@@ -1,0 +1,358 @@
+/* ===== Base Styling ===== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: hsla(210, 37%, 97%, 0.797);
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 950px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Enable scroll if needed */
+}
+.page-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+  
+}
+.assignment-logo {
+ height: 200px;
+ width: 200px;
+ border-radius: 250px;
+}
+
+.search-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+.search-box {
+  display: flex;
+  gap: 8px;
+}
+
+.search-box input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  width: 220px;
+}
+
+.search-box button {
+  padding: 6px 12px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.search-box button:hover {
+  background: #333;
+}
+
+.course-filter label {
+  margin-right: 6px;
+  font-weight: 500;
+}
+
+.course-filter select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Headline */
+.page-title{
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Course{
+ font-weight: bold;
+}
+/* Table Layout */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  min-width: 600px; /* Prevent shrinking too much */
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 0.95rem;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+th {
+  color: black;
+  font-weight: 900;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.due, .overdue, .submitted, .not-submitted {
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+/* Buttons */
+button {
+  padding: 6px 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  width: 100px;
+}
+
+button:hover {
+  background-color: rgb(135, 128, 128);
+}
+
+/* File Input */
+input[type="file"] {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  display: block;
+  max-width: 100%;
+}
+
+.view-link {
+  color: black;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+.view-link:hover {
+  color: #555;
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+
+  }
+
+  .container {
+    width: 100%;
+    max-width: 400px; /* Limit the width for better mobile look */
+    margin: 0 auto;
+    padding: 16px;
+  }
+  
+  .page-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .assignment-logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .search-buttons {
+    flex-direction: column;
+    width: 250px;
+    gap: 12px;
+    margin: 0 auto 20px auto;
+  }
+
+  .search-box,
+  .course-filter {
+    width: 100%;
+    justify-content: center;
+
+  }
+
+  .search-box input {
+    width: 250px;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+ tr {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 330px;
+    max-width: 400px; /* Limit card width */
+  }
+
+td {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+  text-align: center;
+}
+
+td:last-child {
+  border-bottom: none;
+}
+
+td::before {
+  content: attr(data-label);
+  font-weight: 600;
+  flex: 1;
+  text-align: center;
+  color: #444;
+}
+
+/* Make the value side (right text) aligned right and centered */
+td > *:not(:first-child) {
+  flex: 1;
+  text-align: right;
+}
+
+/* Upload section formatting */
+.upload-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.upload-group input[type="file"] {
+  width: 200px;
+  max-width: 90%;
+  padding: 4px;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  text-align: center;
+  color: transparent; /* hide text */
+
+}
+
+.upload-group input[type="file"]::file-selector-button {
+  width: 100%;
+  padding: 0;
+}
+
+/* Hide label "Action" */
+td[data-label="Action"]::before {
+  display: none;
+}
+
+/* Upload button styling */
+.upload-group button {
+  width: 100%;
+  max-width: 200px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+
+  button,
+  input[type="file"],
+  .view-link {
+    display: flex;              /* Enables flex positioning */
+    justify-content: center;   /* Horizontal centering */
+    align-items: center;       /* Vertical centering */
+    height: 40px;              /* Give it a defined height */
+    text-align: center;
+    font-weight: bold
+  }
+
+  .due, .overdue, .submitted, .not-submitted {
+    display: block;
+    text-align: center;
+    margin: 4px auto;
+    font-weight: 500;
+  }
+}
+
+
+/* ===== Responsive: iPad/Tablets (768px–1024px) ===== */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 0.88rem;
+    padding: 6px 10px;
+  }
+
+  input[type="file"] {
+    font-size: 0.85rem;
+  }
+
+  .due, .overdue, .submitted, .not-submitted {
+    font-size: 0.85rem;
+    padding: 4px 7px;
+  }
+}
