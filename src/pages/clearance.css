@@ -77,7 +77,7 @@ input[type="file"] {
 
 button {
   background: black;
-  font-size: 16px;;
+  font-size: 16px;
   border: none;
   color: #fff;
   padding: 8px 14px;
@@ -101,3 +101,4 @@ button:hover {
 .status.cleared {
   color: #4caf50;
 }
+
