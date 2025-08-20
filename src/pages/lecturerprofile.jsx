@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Lecturerprofile.css";
+import "./lecturerprofile.css";
 
 
 function LecturerProfile() {
@@ -217,5 +217,6 @@ function LecturerProfile() {
     </div>
   );
 }
+
 
 export default LecturerProfile;
