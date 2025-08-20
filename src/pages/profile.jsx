@@ -1,5 +1,5 @@
 import React from 'react';
-import './Profile.css';
+import './profile.css';
 
 const Profile = () => {
   return (
@@ -40,3 +40,4 @@ const Profile = () => {
 };
 
 export default Profile;
+
