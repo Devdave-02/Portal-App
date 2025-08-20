@@ -1,0 +1,130 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: hsla(210, 37%, 97%, 0.797);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 500px;
+  max-width: 95%; 
+}
+
+.profile-button {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  margin: auto;
+  width: 250px;
+  align-items: center;
+  color: white;
+  border: none;
+  padding: 20px 35px;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.profile-button:hover {
+  background-color: #333;
+}
+
+.profile-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 350px;
+  margin: 0 auto 15px auto;
+  background-color: rgb(96, 94, 92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 18px;
+  margin-bottom: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: black;
+}
+
+/* Information Grid */
+.info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+/* Each box of information */
+.info-box {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.info-value {
+  color: black;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 20px;
+    height: auto;
+  }
+
+  .profile-container {
+    width: 350px;
+    padding: 30px 20px;
+  }
+
+  .profile-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .profile-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-name {
+    font-size: 20px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+
+  .info-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
