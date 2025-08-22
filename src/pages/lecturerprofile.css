@@ -1,0 +1,250 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: hsla(210, 37%, 97%, 0.797);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+
+}
+
+.profile-card {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 450px;
+    text-align: center; /* Center all inner text */
+    overflow-y: scroll;      /* enable vertical scrolling */
+    scrollbar-width: none; 
+    height: 100%;
+    
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    width: 350px;
+    
+
+
+  }
+
+}
+
+.lecturer-header {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.profile-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.profile-pic-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+}
+
+.upload-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 5px 10px;
+    background: black;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.upload-btn:hover {
+    background: rgba(26, 23, 23, 0.311)
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+}
+
+.labelled {
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 8px;
+    color: #333;
+    justify-content: left;
+}
+
+.profile-input{
+   display: flex;
+   font-size: 10px;
+   padding: 10px;
+   border-radius: 6px;
+   border: 1px solid; 
+   width: 380px; 
+   
+}
+
+@media (max-width: 768px) {
+  .profile-input{
+    width: 300px;
+  }
+
+}
+.profile-select {
+    padding: 10px;
+    margin-top: 4px;
+    border-radius: 6px;
+    font-size: 10px;
+    width: 400px 
+}
+
+@media (max-width: 768px) {
+  .profile-select{
+    width: 300px;
+  }
+
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    width: 400px 
+}
+
+@media (max-width: 768px) {
+  .password-wrapper {
+    width: 300px;
+    
+
+
+  }
+
+}
+
+.passord-input{
+   display: flex;
+   font-size: 10px;
+   padding: 10px;
+   border-radius: 6px;
+   border: 1px solid; 
+   width: 400px 
+
+}
+
+@media (max-width: 768px) {
+  .passord-input{
+    width: 300px;
+  }
+
+}
+
+.toggle-icon,
+.toggle-visibility {
+    position: absolute;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn {
+    margin-top: 17px;
+    width: 100%;
+    max-width: 420px;
+    padding: 10px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background: rgb(29, 19, 19);
+}
+
+.btn.secondary {
+    background: black;
+    color: white;
+}
+
+.btn.secondary:hover {
+     background: rgb(29, 19, 19);
+}
+
+/* Modal Styles */
+.modal-input {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.modal-input:focus {
+  box-shadow: 0 0 4px rgba(0,123,255,0.3);
+}
+
+/* Buttons inside modal */
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.modal-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.modal-btn.confirm {
+  background: black;
+  color: white;
+}
+
+.modal-btn.confirm:hover {
+  background: rgb(23, 22, 22);
+}
+
+.modal-btn.cancel {
+  background: #ddd;
+  color: #333;
+}
+
+.modal-btn.cancel:hover {
+  background: #bbb;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 10px 40px 10px 12px; /* extra space on right for the eye */
+  margin: 8px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.modal-input:focus {
+  box-shadow: 0 0 4px rgba(0,123,255,0.3);
+}

@@ -1,0 +1,343 @@
+ .body{
+  background-color: white;
+  margin: 0;
+ }
+  @media (max-width: 480px) {
+      .body{
+         background-color: white;
+         margin: 0;
+      
+      }
+    }
+ 
+ .main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem;
+  height: 70px;
+  border-bottom: 1px solid #333;
+  position: fixed;         /* Fixes it to the top */
+  top: 0;
+  left: 270px;             /* Adjust this to match your sidebar width */
+  width: calc(100% - 380px); /* Ensures it doesn't cover the sidebar */
+  z-index: 1000;           /* Makes sure it stays above other content */
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+@media (max-width: 480px) {
+    .main-header {
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    gap: 40%;
+
+
+    }
+  }
+
+.welcoming-text {
+  font-size: 35px;
+  font-weight: 900;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@media (max-width: 480px){
+  .welcoming-text{
+    font-size: 30px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 10px;
+  }
+}
+.header-icons i {
+  margin-left: 20px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.header-icons i:hover {
+  color: #888;
+}
+
+
+
+ .uni-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 300px;
+  margin-right: 100px;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+  @media (max-width: 480px) {
+     .uni-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0px;
+      margin-right: 0px;
+      justify-content: center;
+      margin-top: 100px;
+     }
+  }
+.logo-image{
+  width: 300px;
+  height: 250px;
+  border-radius: 400px;
+  margin-bottom: 0px;
+  }
+
+ @media (max-width: 480px) {
+     .logo-image{
+      width: 100px;
+      height: 100px;
+      border-radius: 150px;
+      margin-bottom: 0px;
+     }
+  }
+@media (min-width: 481px) and (max-width: 1030px){
+      .logo-image{
+        width: 300px;
+        height: 300px;
+        border-radius: 400px;
+        margin-bottom: 0px;
+      }
+}
+.uni-text{
+  font-size: 60px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-top: 0px;
+  color: #333;
+}
+@media (max-width: 480px) {
+  .uni-text{
+     font-size: 20px;
+     text-align: center;
+  } 
+}
+
+@media (min-width: 481px) and (max-width: 1030px) {
+   .uni-text{
+     font-size: 45px;
+     text-align: center;
+   }
+}
+
+.container-upper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 350px;
+  margin-right: 100px;
+  gap: 60px;
+}
+  @media (max-width: 480px) {
+    .container-upper{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0px;
+      margin-right: 0px;
+  
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 1030px) {
+   .container-upper{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 250px;
+      margin-right: 0px;
+    }
+}
+  
+.course-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 400px;
+  background-color: rgb(237, 235, 231);
+  border-radius: 18px;
+  color: black;
+}
+
+ @media (max-width: 480px){
+   .course-container{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 250px;
+     height: 150px;
+   }
+ }
+
+ @media (min-width: 481px) and (max-width: 1030px) {
+   .course-container{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+   }
+}
+.course-text{
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+.course-image{
+  height: 45px;
+  width: 50px;
+}
+.lecture-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 400px;
+  background-color: rgb(237, 235, 231);
+  border-radius: 18px;
+  color: black;
+}
+  @media (max-width: 480px){
+   .lecture-container{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 250px;
+     height: 150px;
+   }
+ }
+.lecture-text{
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+
+}
+.lecture-image{
+  height: 50px;
+  width: 50px;
+}
+.container-lower{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: 350px;
+  margin-right: 100px;
+  gap: 60px;
+}
+@media (max-width: 480px) {
+    .container-lower{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 100px;
+    }
+  }
+
+@media (min-width: 481px) and (max-width: 1030px) {
+   .container-lower{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 250px;
+      margin-right: 0px;
+    }
+}
+.event-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 400px;
+  background-color: rgb(237, 235, 231);
+  border-radius: 18px;
+  color: black;
+}
+@media (max-width: 480px) {
+  .event-container{
+     width: 250px;
+     height: 150px;
+  }
+}
+.event-text{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+
+}
+.timetable-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 400px;
+  background-color: rgb(237, 235, 231);
+  border-radius: 18px;
+  color: black;
+}
+ @media (max-width: 480px) {
+  .timetable-container{
+     width: 250px;
+     height: 150px;
+  }
+}
+.timetable-text{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+.event-button{
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 200px;
+}
+.timetable-button{
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 200px;
+}

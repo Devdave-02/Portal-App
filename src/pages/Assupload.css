@@ -1,0 +1,151 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h5, h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #222;
+  margin-top: 0px;
+
+}
+form {
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.header-text{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+
+}
+
+form input, form textarea {
+  width: 500px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.btn-upload {
+  width: 500px;
+  padding: 12px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #000;
+}
+
+.assignment-list {
+  margin-top: 5px;
+}
+
+.assignment-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.assignment-list li {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border-left: 4px solid #222;
+}
+
+/* 📱 Mobile (Android) */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .upload-container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  form input, form textarea {
+    font-size: 13px;
+    padding: 8px;
+    width: 300px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+    width: 300px;
+  }
+}
+
+/* 📲 Tablet (iPad, 601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .upload-container {
+    max-width: 700px;
+  }
+
+  form input, form textarea {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 14px;
+  }
+}
+
+/* 💻 Laptop/Desktop (above 1024px) */
+@media (min-width: 1025px) {
+  .upload-container {
+    max-width: 800px;
+  }
+
+  h5 {
+    font-size: 26px;
+  }
+
+  form input, form textarea {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+}
+

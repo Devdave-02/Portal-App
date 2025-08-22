@@ -1,0 +1,143 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: hsla(210, 37%, 97%, 0.797);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container for Form */
+.container-course-reg {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Optional logo and header wrapper */
+.container-reg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo image */
+.image-registration {
+  width: 150px;
+  height: 150px;
+  border-radius: 350px;
+  object-fit: cover;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Form Styles */
+.course-form {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.student-name {
+  padding: 10px;
+  width: 460px;
+  border-radius: 8px;
+  border: 1px solid;
+  font-size: 15px;
+  accent-color: black;
+}
+
+.course-select {
+  padding: 10px;
+  width: 480px;
+  border-radius: 8px;
+  border: 1px solid;
+  font-size: 15px;
+  accent-color: black;
+}
+.course-checkbox {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: rgb(120, 118, 113);
+}
+
+/* Course List */
+#courses-list label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Result Summary Box */
+.result-box {
+  background-color: hsla(210, 37%, 97%, 0.797);
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 600px;
+
+}
+
+/* Scrollbar styling for dropdowns */
+select::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+.container-course-reg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+ .container-reg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.course-form {
+  width: 300px;
+  display: flex;
+  flex-direction: column
+}
+ .student-name {
+  width: 280px;
+}
+
+.result-box {
+  width: 300px;
+
+}
+
+.course-select {
+  width: 280px;
+
+}
+
+}
